@@ -67,8 +67,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
-    width: 300px;
+    /* padding-left: 100px;
+    width: 300px; */
 }
 
 .body-image {
@@ -110,8 +110,14 @@ body {
     border-bottom: none;
 }
 
+.logo {
+    position: absolute;
+    left: 48%;
+}
+
 .log-in {
     display: flex;
+    padding-left: 40px;
 }
 
 .cur-nav {
@@ -335,24 +341,24 @@ tr :nth-child(2) {
 
 .prev {
     position: absolute;
-    height: 10px;
     cursor: pointer;
     color: rgba(115, 115, 115, 1);
     top: -60px;
-    width: 28px;
-    font-size: 22px;
-    right: 65px;
+    width: 25px;
+    height: 25px;
+    /* font-size: 22px; */
+    right: 50px;
 
 }
 
 .next2 {
-    right: 10px;
+    right: 7px;
     position: absolute;
-    height: 10px;
     cursor: pointer;
     color: rgba(115, 115, 115, 1);
     top: -60px;
-    width: 28px;
+    width: 25px;
+    height: 25px;
     font-size: 22px;
 }
 
@@ -485,6 +491,14 @@ hr {
         width: 130px;
         height: 170px;
 
+    }
+
+    .prev {
+        right: 65px;
+    }
+
+    .next2 {
+        right: 30px;
     }
 
     .item {
