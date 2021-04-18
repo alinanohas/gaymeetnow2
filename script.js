@@ -25,35 +25,19 @@ $(document).ready(function () {
 
 
 })
-// $('.slider-nav').slick({
-//     infinite: true,
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     dots: true,
-//   });
-// $('.slider-for').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     fade: true,
-//     asNavFor: '.slider-nav'
-//   });
+
 $('.slider-nav').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<a class="prev"  cursor: pointer; > &#10229; </a>',
-    nextArrow: '<a class="next2" cursor: pointer;> &#10230; </a>',
-    // speed: 500,
+    prevArrow: '<img class="prev" src="Images/left-chevron.png" alt="">',
+    nextArrow: '<img class="next2" src="Images/right-chevron.png" alt="">',
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     variableWidth: false,
-
-    // asNavFor: '.slider-for',
-    dots: true,
+    dots: false,
     // centerMode: true,
-    // focusOnSelect: true
+    // focusOnSelect: true,
     responsive: [
         {
             breakpoint: 1040,
@@ -61,7 +45,7 @@ $('.slider-nav').slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+
             }
         },
         {
@@ -70,7 +54,6 @@ $('.slider-nav').slick({
                 slidesToShow: 3,
                 slidesToScroll: 2,
                 infinite: true,
-                dots: true
             }
         },
         {
@@ -78,8 +61,6 @@ $('.slider-nav').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                dots: true
-
             }
         },
         {
@@ -87,8 +68,6 @@ $('.slider-nav').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                dots: true
-
             }
         }
     ]
