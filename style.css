@@ -25,8 +25,8 @@ body {
 
 .overlay {
     width: 100%;
-    position: absolute ;
-    z-index: 3 ;
+    position: absolute;
+    z-index: 3;
     height: 700px;
     /* background-color: black;
     opacity: 0.5; */
@@ -45,25 +45,23 @@ body {
     /* background-size: 100%; */
 
     /* background: top center 100% 100% no-repeat ; */
-
+    display: flex;
+    flex-direction: column;
     background-size: cover;
     /* /* background-position: center bottom/ 100% 100%; */
     background-repeat: no-repeat;
-    max-height: 700px;
+    height: 1000px;
+
+
 
 }
 
-.slick-slider2 {
-    /* position: absolute; */
-    max-height: 750px;
-
-}
-
-.slick-slider2 img {
-    position: relative;
+.back img {
+    /* position: relative; */
     z-index: -1;
-    min-width: auto;
-    max-height: 700px;
+    width: auto;
+    height: 100%;
+
     background-size: cover;
     background-position: center top;
 }
@@ -528,6 +526,11 @@ hr {
 
     .timer {
         font-size: 24px;
+    }
+
+    .clock {
+        font-size: 24px;
+
     }
 
     .timer h3 {
