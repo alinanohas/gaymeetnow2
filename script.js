@@ -23,9 +23,45 @@ $(document).ready(function () {
     })
 
 
+    function CountDown(duration, display) {
+        if (!isNaN(duration)) {
+            var timer = duration, minutes, seconds;
+
+            var interVal = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                $('.clock').html("<a>" + minutes + "min " + seconds + "sec" + "</a>");
+                if (--timer < 0) {
+                    timer = duration;
+                    SubmitFunction();
+                    //    $('.clock').empty();
+                    $('.clock').html("<a>time is over</a>");
+                    clearInterval(interVal)
+                }
+            }, 1000);
+        }
+    }
+
+    function SubmitFunction() {
+        $('.clock').html("<a>time is over</a>");
+    }
+
+    CountDown(300, $('.clock'));
 
 })
+$('.back').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: false,
+    arrows: false,
+    variableHeight: false,
 
+})
 $('.slider-nav').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
