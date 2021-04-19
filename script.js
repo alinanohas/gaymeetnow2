@@ -53,15 +53,15 @@ $(document).ready(function () {
     CountDown(300, $('.clock'));
 
 })
-$('.back').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    dots: false,
-    arrows: false,
-    variableHeight: false,
+// $('.back').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     dots: false,
+//     arrows: false,
+//     variableHeight: false,
 
-})
+// })
 $('.slider-nav').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
