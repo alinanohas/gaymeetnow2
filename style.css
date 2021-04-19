@@ -18,8 +18,8 @@ body {
     padding: 20px 0px 0px 0px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    z-index: 999;
+/*     position: relative; */
+/*     z-index: 999; */
     /* align-items: center; */
 }
 
@@ -131,6 +131,7 @@ body {
 .menu {
     width: 415px;
     height: 467px;
+    z-index: 999;
     background: #26619E;
     position: absolute;
     left: 240px;
