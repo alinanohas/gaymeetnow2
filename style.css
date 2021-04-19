@@ -18,8 +18,60 @@ body {
     padding: 20px 0px 0px 0px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 999;
     /* align-items: center; */
 }
+
+.overlay {
+    width: 100%;
+    position: absolute ;
+    z-index: 3 ;
+    height: 700px;
+    /* background-color: black;
+    opacity: 0.5; */
+
+    /* backdrop-filter: blur(5px);  */
+
+}
+
+.back {
+    width: 100%;
+    position: absolute !important;
+    z-index: -1;
+    /* -moz-background-size: 100%;
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%;  */
+    /* background-size: 100%; */
+
+    /* background: top center 100% 100% no-repeat ; */
+
+    background-size: cover;
+    /* /* background-position: center bottom/ 100% 100%; */
+    background-repeat: no-repeat;
+    max-height: 700px;
+
+}
+
+.slick-slider2 {
+    /* position: absolute; */
+    max-height: 750px;
+
+}
+
+.slick-slider2 img {
+    position: relative;
+    z-index: -1;
+    min-width: auto;
+    max-height: 700px;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* .slick-slider {
+    position: absolute;
+    z-index: -1;
+} */
 
 .header {
     width: 100%;
@@ -134,27 +186,37 @@ body {
 }
 
 .reg-info {
-    width: 320px;
+    width: 475px;
     text-align: center;
     margin: 30px auto 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .timer {
     width: 100%;
     font-family: 'SourceSansPro-Regular';
-    font-size: 24px;
+    font-size: 36px;
     display: flex;
     justify-content: space-between;
 }
 
+.clock {
+    font-size: 36px;
+    font-family: 'SourceSansPro-Regular';
+    font-weight: 300;
+}
+
 .timer h3 {
     color: #296DB5;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 36px;
+    /* line-height: 30px; */
     font-weight: 400;
     float: left;
     padding-right: 20px;
@@ -166,8 +228,11 @@ body {
 
 .reg-info p {
     font-family: 'SourceSansPro-Light';
-    font-size: 12px;
-    color: #737373;
+    font-size: 14px;
+
+    /* color: #737373; */
+    color: black;
+
     text-align: center;
     width: 80%;
     line-height: 18px;
@@ -184,6 +249,9 @@ body {
 }
 
 .plan {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+
     width: 308px;
     box-shadow: 0px 4px 10px 0px rgba(199, 199, 199, 0.25);
     height: 388px;
@@ -234,7 +302,8 @@ tr :nth-child(2) {
 }
 
 .information p {
-    color: rgba(115, 115, 115, 1);
+    color: black;
+    /* color: rgba(115, 115, 115, 1); */
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 15px;
@@ -450,18 +519,40 @@ hr {
 
 @media screen and (max-width: 500px) {
 
+
+
+    .reg-info {
+        width: 100%;
+        margin: 20px auto 30px;
+    }
+
+    .timer {
+        font-size: 24px;
+    }
+
+    .timer h3 {
+        font-size: 24px;
+        font-weight: 400;
+        padding-right: 0px;
+    }
+
+    .reg-info p {
+        font-size: 12px;
+    }
+
     body {
         overflow-x: hidden;
     }
 
     .header {
-        padding: 0 15px;
-        font-size: 14px;
+        padding-left: 30px;
+        font-size: 17px;
     }
 
     .logo {
         font-size: 16px;
-
+        text-transform: uppercase;
+        left: 82%;
     }
 
     .menu-line {
