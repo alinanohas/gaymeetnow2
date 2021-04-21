@@ -24,68 +24,69 @@ $(document).ready(function () {
 })
 
 
-function CountDown(duration, display) {
-    if (!isNaN(duration)) {
-        var timer = duration, minutes, seconds;
+// function CountDown(duration, display) {
+//     if (!isNaN(duration)) {
+//         var timer = duration, minutes, seconds;
 
-        var interVal = setInterval(function () {
-            minutes = parseInt(timer / 60, 10);
-            seconds = parseInt(timer % 60, 10);
+//         var interVal = setInterval(function () {
+//             minutes = parseInt(timer / 60, 10);
+//             seconds = parseInt(timer % 60, 10);
 
-            minutes = minutes < 10 ? "0" + minutes : minutes;
-            seconds = seconds < 10 ? "0" + seconds : seconds;
+//             minutes = minutes < 10 ? "0" + minutes : minutes;
+//             seconds = seconds < 10 ? "0" + seconds : seconds;
 
-            $('.clock').html("<a>" + minutes + "min " + seconds + "sec" + "</a>");
-            if (--timer < 0) {
-                timer = duration;
-                SubmitFunction();
-                //    $('.clock').empty();
-                $('.clock').html("<a>time is over</a>");
-                clearInterval(interVal)
-            }
-        }, 1000);
-    }
-}
+//             $('.clock').html("<a>" + minutes + "min " + seconds + "sec" + "</a>");
+//             if (--timer < 0) {
+//                 timer = duration;
+//                 SubmitFunction();
+//                 //    $('.clock').empty();
+//                 $('.clock').html("<a>time is over</a>");
+//                 clearInterval(interVal)
+//             }
+//         }, 1000);
+//     }
+// }
 
-function SubmitFunction() {
-    $('.clock').html("<a>time is over</a>");
-}
+// function SubmitFunction() {
+//     $('.clock').html("<a>time is over</a>");
+// }
 
-CountDown(300, $('.clock'));
+// CountDown(300, $('.clock'));
 
-$('.plans').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // autoplay: true,
-    dots: false,
-    arrows: false,
-    variableHeight: false,
-    arrows: true,
-    nextArrow: '<p class="next">Next &#10230;</p>',
-    prevArrow: '<p style="display: none;"></p>',
+// $('.plans').slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     // autoplay: true,
+//     dots: false,
+//     arrows: false,
+//     variableHeight: false,
+//     arrows: true,
+//     nextArrow: '<p class="next">Next &#10230;</p>',
+//     prevArrow: '<p style="display: none;"></p>',
 
-    responsive: [
-        {
-            breakpoint: 1040,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                variableWidth: false,
+//     responsive: [
+//         {
+//             breakpoint: 1040,
+//             settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//                 infinite: true,
+//                 variableWidth: false,
 
-            }
-        },
-        {
-            breakpoint: 650,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: false,
+//             }
+//         },
+//         {
+//             breakpoint: 650,
+//             settings: {
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//                 variableWidth: false,
 
-            }
-        },
-    ]
-})
+//             }
+//         },
+//     ]
+// })
+
 $('.slider-nav').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
