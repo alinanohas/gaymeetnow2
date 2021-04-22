@@ -322,9 +322,6 @@ tr :nth-child(2) {
     font-size: 16px;
     font-family: 'SourceSansPro-Regular';
     cursor: pointer;
-    right: 40px;
-    bottom: 20px;
-    position: absolute;
 }
 
 .for-profiles {
